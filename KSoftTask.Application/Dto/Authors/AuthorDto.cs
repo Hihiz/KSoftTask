@@ -7,6 +7,6 @@ namespace KSoftTask.Application.Dto.Authors
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public ICollection<AuthorBookDto> AuthorBooks { get; }
+        public ICollection<AuthorBookDto> AuthorBooks { get; } = new List<AuthorBookDto>();
     }
 }

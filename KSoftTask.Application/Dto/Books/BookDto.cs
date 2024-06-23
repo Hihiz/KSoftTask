@@ -8,7 +8,7 @@ namespace KSoftTask.Application.Dto.Books
         public int Id { get; set; }
         public string Title { get; set; }
 
-        public ICollection<AuthorBookDto> AuthorBooks { get; }
-        public ICollection<PublisherBookDto> PublisherBooks { get; }
+        public ICollection<AuthorBookDto> AuthorBooks { get; } = new List<AuthorBookDto>();
+        public ICollection<PublisherBookDto> PublisherBooks { get; } = new List<PublisherBookDto>();
     }
 }
