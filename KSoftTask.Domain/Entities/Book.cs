@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public string Title { get; set; }
 
-        public ICollection<AuthorBook> AuthorBooks { get; }
-        public ICollection<PublisherBook> PublisherBooks { get; }
+        public ICollection<AuthorBook> AuthorBooks { get; } = new List<AuthorBook>();
+        public ICollection<PublisherBook> PublisherBooks { get; } = new List<PublisherBook>();
     }
 }
